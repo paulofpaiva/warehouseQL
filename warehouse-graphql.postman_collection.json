@@ -1,0 +1,130 @@
+{
+  "info": {
+    "name": "warehouseQL GraphQL",
+    "_postman_id": "f35dc1a3-2d22-4d6a-9d8c-3e8d55e4dfc6",
+    "description": "Postman collection for WarehouseQL GraphQL study project (Hot Chocolate).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1) Fetch all warehouses",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"query { warehouses { id name location capacity } }\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5263/graphql",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5263",
+          "path": ["graphql"]
+        }
+      }
+    },
+    {
+      "name": "2) Fetch products filtered by category",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"query ($category: String) { products(category: $category) { id name category unitPrice weightKg } }\",\n  \"variables\": {\n    \"category\": \"Electronics\"\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5263/graphql",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5263",
+          "path": ["graphql"]
+        }
+      }
+    },
+    {
+      "name": "3) Fetch inventory items filtered by warehouseId",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"query ($warehouseId: String) { inventoryItems(warehouseId: $warehouseId) { id warehouseId productId quantity lastUpdatedAt } }\",\n  \"variables\": {\n    \"warehouseId\": \"w-1\"\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5263/graphql",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5263",
+          "path": ["graphql"]
+        }
+      }
+    },
+    {
+      "name": "4) Fetch inventory with quantity below a threshold",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"query ($maxQuantity: Int) { inventoryItems(maxQuantity: $maxQuantity) { id warehouseId productId quantity lastUpdatedAt } }\",\n  \"variables\": {\n    \"maxQuantity\": 25\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5263/graphql",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5263",
+          "path": ["graphql"]
+        }
+      }
+    },
+    {
+      "name": "5) Fetch products sorted by unitPrice descending",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"query { products(order: { unitPrice: DESC }) { id name category unitPrice weightKg } }\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5263/graphql",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5263",
+          "path": ["graphql"]
+        }
+      }
+    },
+    {
+      "name": "6) Fetch inventoryItemsByWarehouse (by ID)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"query ($warehouseId: ID!) { inventoryItemsByWarehouse(warehouseId: $warehouseId) { id warehouseId productId quantity lastUpdatedAt } }\",\n  \"variables\": {\n    \"warehouseId\": \"w-2\"\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5263/graphql",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5263",
+          "path": ["graphql"]
+        }
+      }
+    }
+  ]
+}
