@@ -1,0 +1,72 @@
+[
+  {
+    "id": "p-1",
+    "name": "40\" TV",
+    "category": "Electronics",
+    "unitPrice": 1499.90,
+    "weightKg": 8.2
+  },
+  {
+    "id": "p-2",
+    "name": "Gaming Laptop 15\"",
+    "category": "Electronics",
+    "unitPrice": 5899.00,
+    "weightKg": 2.4
+  },
+  {
+    "id": "p-3",
+    "name": "Office Chair Ergonomic",
+    "category": "Furniture",
+    "unitPrice": 899.00,
+    "weightKg": 14.5
+  },
+  {
+    "id": "p-4",
+    "name": "Standing Desk 140cm",
+    "category": "Furniture",
+    "unitPrice": 1799.90,
+    "weightKg": 32.0
+  },
+  {
+    "id": "p-5",
+    "name": "LED Bulb 9W",
+    "category": "Lighting",
+    "unitPrice": 12.50,
+    "weightKg": 0.08
+  },
+  {
+    "id": "p-6",
+    "name": "Industrial Pallet",
+    "category": "Supplies",
+    "unitPrice": 120.00,
+    "weightKg": 18.0
+  },
+  {
+    "id": "p-7",
+    "name": "Forklift Battery",
+    "category": "Supplies",
+    "unitPrice": 3200.00,
+    "weightKg": 210.0
+  },
+  {
+    "id": "p-8",
+    "name": "Smartphone 128GB",
+    "category": "Electronics",
+    "unitPrice": 2499.00,
+    "weightKg": 0.19
+  },
+  {
+    "id": "p-9",
+    "name": "Air Conditioner 12k BTU",
+    "category": "Electronics",
+    "unitPrice": 2199.90,
+    "weightKg": 24.0
+  },
+  {
+    "id": "p-10",
+    "name": "Warehouse Rack 3m",
+    "category": "Furniture",
+    "unitPrice": 2599.00,
+    "weightKg": 85.0
+  }
+]
