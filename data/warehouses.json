@@ -1,0 +1,62 @@
+[
+  {
+    "id": "w-1",
+    "name": "Central Distribution Hub",
+    "location": "São Paulo, SP",
+    "capacity": 50000
+  },
+  {
+    "id": "w-2",
+    "name": "North Zone Warehouse",
+    "location": "Campinas, SP",
+    "capacity": 30000
+  },
+  {
+    "id": "w-3",
+    "name": "South Logistics Center",
+    "location": "Curitiba, PR",
+    "capacity": 28000
+  },
+  {
+    "id": "w-4",
+    "name": "East Fulfillment",
+    "location": "Rio de Janeiro, RJ",
+    "capacity": 35000
+  },
+  {
+    "id": "w-5",
+    "name": "West Cross-Dock",
+    "location": "Belo Horizonte, MG",
+    "capacity": 22000
+  },
+  {
+    "id": "w-6",
+    "name": "Port Operations",
+    "location": "Santos, SP",
+    "capacity": 45000
+  },
+  {
+    "id": "w-7",
+    "name": "Northeast Regional",
+    "location": "Recife, PE",
+    "capacity": 26000
+  },
+  {
+    "id": "w-8",
+    "name": "Southwest Consolidation",
+    "location": "Goiânia, GO",
+    "capacity": 24000
+  },
+  {
+    "id": "w-9",
+    "name": "E-commerce Fulfillment",
+    "location": "São Paulo, SP",
+    "capacity": 40000
+  },
+  {
+    "id": "w-10",
+    "name": "Overflow Storage",
+    "location": "Campinas, SP",
+    "capacity": 15000
+  }
+]

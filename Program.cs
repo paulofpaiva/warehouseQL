@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSingleton<WarehouseQL.Services.DataService>();
+
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<WarehouseQL.GraphQL.Query>()
