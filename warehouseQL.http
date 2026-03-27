@@ -1,0 +1,6 @@
+@warehouseQL_HostAddress = http://localhost:5263
+
+GET {{warehouseQL_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
